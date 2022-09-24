@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Panda-font";
+    src: local("Panda-font"), url("./font/River\ Adventurer.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "bamboo";
+    src: local("Panda-font"), url("./font/Skranji-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.home {
+    background-image: url("./background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.content-title {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #166534;
+    text-transform: uppercase;
+}
+
+.dashboard-title {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #6fc28f;
+    text-transform: uppercase;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

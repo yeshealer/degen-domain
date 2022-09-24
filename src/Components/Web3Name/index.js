@@ -1,0 +1,27 @@
+import React from 'react'
+import { Player } from '@lottiefiles/react-lottie-player'
+
+export default function index() {
+    return (
+        <div className='w-full bg-[#e5e5e5] flex justify-center'>
+            <div className='w-3/4 text-black py-20 border-b-4 border-lime-400 relative flex flex-col items-center'>
+                <div className='font-["panda-font"] text-7xl text-center text-white content-title'>Your web3 username</div>
+                <div className='font-["bamboo"] max-w-5xl text-2xl text-center font-thin mt-10 text-stone-700 leading-10'>No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services.</div>
+                <div className='w-full flex justify-center'>
+                    <div className='flex gap-5 items-center border border-lime-400 px-10 py-2 rounded-full mt-10'>
+                        <img src='assets/logo.png' className='w-16 h-16' alt='logo' />
+                        <div className='font-["bamboo"] text-3xl text-green-900'>panda.dogen</div>
+                    </div>
+                </div>
+                <div className='absolute bottom-0 right-5'>
+                    <Player
+                        autoplay
+                        loop
+                        src="assets/coding_panda.json"
+                        className='w-[240px] h-[240px]'
+                    />
+                </div>
+            </div>
+        </div>
+    )
+}
