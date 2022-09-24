@@ -23,6 +23,8 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #166534;
     text-transform: uppercase;
+    text-shadow: 0.3px 0.5px 0.7px #0000004d, 0.8px 1.6px 2px #0000004d,
+        2.1px 4.1px 5.2px #0000004d, 5px 10px 12.6px #0000004d;
 }
 
 .dashboard-title {
@@ -41,6 +43,10 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #606516;
     text-transform: uppercase;
+}
+
+.faq-content {
+    box-shadow: 8px 8px #166534;
 }
 
 @tailwind base;

@@ -10,13 +10,15 @@ export default function index() {
                 <div className='grid grid-cols-2 gap-5 mt-20 relative'>
                     {HowToBuy.map((process, index) => {
                         return (
-                            <div className='border-2 border-[#166534] bg-white p-10 rounded-xl flex flex-col' key={process.title}>
+                            <div className='border-2 border-[#166534] bg-white p-10 rounded-xl flex flex-col overflow-hidden shadow-xl relative' key={process.title}>
                                 <div className={`text-white font-["bamboo"] text-3xl font-bold dashboard-title w-3/4 ${index % 2 === 1 && 'text-end self-end'}`}>{process.title}</div>
                                 <div className={`text-stone-700 text-xl font-["bamboo"] mt-5 w-3/4 ${index % 2 === 1 && 'text-end self-end'}`}>{process.description}</div>
+                                <div className={`absolute text-[#166534] bg-[#77e2924d] w-20 h-20 rounded-full -top-6 ${index % 2 === 1 ? '-right-6' : '-left-6'}`} />
+                                <div className={`absolute text-[#166534] text-3xl font-["bamboo"] font-bold flex items-center justify-center top-2 ${index % 2 === 1 ? 'right-4' : 'left-4'}`}>{index + 1}</div>
                             </div>
                         )
                     })}
-                    <div className='w-[400px] h-[400px] border border-[#166534] rounded-full p-10 absolute bg-[#e5e5e5] left-[500px] top-10'>
+                    <div className='w-[380px] h-[380px] border border-[#166534] rounded-full p-10 absolute bg-[#e5e5e5] left-[510px] top-12'>
                         <Player
                             autoplay
                             loop

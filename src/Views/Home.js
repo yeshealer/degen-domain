@@ -1,5 +1,14 @@
 import React from 'react'
-import { Header, Dashboard, Web3Name, OurProject, HowToMint } from '../Components'
+import {
+  Header,
+  Dashboard,
+  Web3Name,
+  OurProject,
+  HowToMint,
+  Art,
+  FAQ,
+  Footer
+} from '../Components'
 
 export default function Home() {
   return (
@@ -11,6 +20,9 @@ export default function Home() {
       <Web3Name />
       <OurProject />
       <HowToMint />
+      <Art />
+      <FAQ />
+      <Footer />
     </>
   )
 }
