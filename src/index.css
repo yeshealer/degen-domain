@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "bamboo";
-    src: local("Panda-font"), url("./font/Skranji-Regular.ttf") format("truetype");
+    src: local("Panda-font"), url("./font/BalsamiqSans-Regular.ttf") format("truetype");
     font-weight: normal;
 }
 
@@ -20,14 +20,26 @@
 }
 
 .content-title {
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #166534;
     text-transform: uppercase;
 }
 
 .dashboard-title {
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #6fc28f;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #166534;
+    text-transform: uppercase;
+}
+
+.dashboard-title-red {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #651616;
+    text-transform: uppercase;
+}
+
+.dashboard-title-yellow {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #606516;
     text-transform: uppercase;
 }
 
