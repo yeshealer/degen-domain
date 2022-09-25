@@ -20,34 +20,34 @@ export default function FAQ() {
     return (
         <Element name='faq' className='w-full flex justify-center bg-[#E5E5E5] relative'>
             <Content>
-                <ComponentTitle>FAQ</ComponentTitle>
-                <div className='absolute top-0 -right-20 xl:right-0'>
+                <ComponentTitle className='-mt-10 lg:mt-0'>FAQ</ComponentTitle>
+                <div className='absolute -top-10 xl:top-0 -right-20 xl:right-0'>
                     <Player
                         autoplay
                         loop
                         src='https://assets7.lottiefiles.com/packages/lf20_qjwbwpwr.json'
-                        className='w-[300px] h-[300px] rounded-xl'
+                        className='w-[200px] lg:w-[300px] h-[200px] lg:h-[300px] rounded-xl'
                     />
                 </div>
-                <div className='mt-10 w-full flex flex-col items-center'>
+                <div className='lg:mt-10 w-full flex flex-col items-center'>
                     {FAQs.map((faq, index) => {
                         return (
-                            <div key={'faq' + index} className='w-[70%] text-4xl text-stone-900 font-["Panda-font"] text-start bg-white p-5 rounded-xl drop-shadow-xl faq-content cursor-pointer mt-7' onClick={() => handleFAQ(index)}>
+                            <div key={'faq' + index} className='w-[90%] lg:w-[70%] text-2xl lg:text-3xl xl:text-4xl text-stone-900 font-["Panda-font"] text-start bg-white p-5 rounded-xl drop-shadow-xl faq-content cursor-pointer mt-7' onClick={() => handleFAQ(index)}>
                                 <div className='flex justify-between items-center'>
                                     {faq.question}
                                     {!isFAQOpen[index] ? <Icon icon="akar-icons:plus" width="30" height="30" /> : <Icon icon="akar-icons:minus" width="30" height="30" />}
                                 </div>
-                                {isFAQOpen[index] && <div className='font-["bamboo"] text-xl mt-5'>{faq.answer}</div>}
+                                {isFAQOpen[index] && <div className='font-["bamboo"] text-base lg:text-lg xl:text-xl mt-5'>{faq.answer}</div>}
                             </div>
                         )
                     })}
                 </div>
-                <div className='absolute -bottom-10 -left-32 xl:-left-10'>
+                <div className='absolute -bottom-10 -left-24 xl:-left-10'>
                     <Player
                         autoplay
                         loop
                         src='https://assets7.lottiefiles.com/packages/lf20_q4wbz787.json'
-                        className='w-[300px] h-[300px] rounded-xl'
+                        className='w-[200px] lg:w-[300px] h-[200px] lg:h-[300px] rounded-xl'
                     />
                 </div>
             </Content>

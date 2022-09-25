@@ -8,12 +8,12 @@ import "react-multi-carousel/lib/styles.css";
 export default function Art() {
     const responsive = {
         desktop: {
-            breakpoint: { max: 3000, min: 1280 },
+            breakpoint: { max: 3000, min: 1024 },
             items: 3,
             slidesToSlide: 1
         },
         tablet: {
-            breakpoint: { max: 1280, min: 800 },
+            breakpoint: { max: 1024, min: 800 },
             items: 2,
             slidesToSlide: 1
         },
@@ -27,7 +27,7 @@ export default function Art() {
         <Element name='art' className='w-full flex justify-center bg-[#E5E5E5] relative'>
             <Content>
                 <ComponentTitle>Our Art</ComponentTitle>
-                <div className='text-2xl text-stone-700 font-["bamboo"] mt-20 break-words leading-10'>
+                <div className='text-lg xl:text-xl xl:text-2xl text-stone-700 font-["bamboo"] mt-10 lg:mt-16 2xl:mt-20 break-words leading-8 xl:leading-10'>
                     We are proud to support ingenuity in all its forms with the <b>DEGEN DOMAIN SERVICE</b>. The <b>DEGENArmy</b> is made up of talented individuals who have united to build something remarkable, and we support this by cultivating an environment which encourages creativity and growth. Through the power of the <b>DEGEN DOMAIN SERVICE</b>, we help holders find the tools they need to bring their inspiration and unique perspectives to life. This as just another way to encourage others to step outside of preconceived limits and regulations and experience what it means to be part of our decentralized movement.
                 </div>
                 <Carousel
@@ -49,7 +49,7 @@ export default function Art() {
                                 autoplay
                                 loop
                                 src={`assets/panda-art-${index + 1}.json`}
-                                className='w-[300px] h-[300px] rounded-xl'
+                                className='w-[240px] xl:w-[300px] h-[240px] xl:h-[300px] rounded-xl'
                                 key={pandaArt + index}
                             />
                         )

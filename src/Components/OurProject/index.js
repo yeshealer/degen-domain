@@ -9,10 +9,10 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function index() {
     const ProjectDetail = wrapn('div')`
-        text-stone-700 text-3xl font-["bamboo"] font-thin border-2 rounded-xl w-72 2xl:w-80 relative p-5 bg-white overflow-hidden
+        text-stone-700 text-2xl lg:text-3xl font-["bamboo"] font-thin border-2 rounded-xl w-60 lg:w-72 2xl:w-80 relative p-3 lg:p-5 bg-white overflow-hidden
     `
     const CircleBadge = wrapn('div')`
-        bg-[#77e2924d] absolute w-40 h-40 -top-16 -left-8 rounded-full flex items-center justify-center
+        bg-[#77e2924d] absolute w-32 lg:w-40 h-32 lg:h-40 -top-16 -left-8 rounded-full flex items-center justify-center
     `
 
     const responsive = {
@@ -42,12 +42,12 @@ export default function index() {
                             autoplay
                             loop
                             src="https://assets7.lottiefiles.com/packages/lf20_3j3plqzq.json"
-                            className='w-[300px] h-[300px]'
+                            className='w-[240px] lg:w-[300px] h-[240px] lg:h-[300px]'
                         />
                     </div>
                     <div className='w-[70%]'>
-                        <div className='text-3xl xl:text-4xl font-["bamboo"] font-black text-stone-700 mt-20'>DEGEN DOMAIN SERVICES</div>
-                        <div className='text-xl xl:text-2xl font-["bamboo"] text-stone-700 mt-10'>No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services. No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services.</div>
+                        <div className='text-2xl lg:text-3xl xl:text-4xl font-["bamboo"] font-black text-stone-700 mt-20'>DEGEN DOMAIN SERVICES</div>
+                        <div className='text-base lg:text-xl xl:text-2xl font-["bamboo"] text-stone-700 mt-5 lg:mt-10'>No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services. No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services.</div>
                     </div>
                 </div>
                 <div className='w-4/5 text-center py-10 flex flex-col items-center'>
@@ -67,21 +67,21 @@ export default function index() {
                         <ProjectDetail className='border-[#651616]'>
                             <CircleBadge className='bg-[#ff7cb34d]' />
                             <div className='dashboard-title-red font-bold text-white flex items-center gap-5 justify-between'>
-                                <Icon icon="bx:edit" color="#651616" width="50" height="50" />
+                                <Icon icon="bx:edit" color="#651616" className='w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]' />
                                 Mint
                             </div>
                         </ProjectDetail>
                         <ProjectDetail className='border-[#606516]'>
                             <CircleBadge className='bg-[#fdf47b4d]' />
                             <div className='dashboard-title-yellow font-bold text-white flex items-center gap-5 justify-between'>
-                                <Icon icon="medical-icon:i-waiting-area" color="#606516" width="50" height="50" />
+                                <Icon icon="medical-icon:i-waiting-area" color="#606516" className='w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]' />
                                 Waiting
                             </div>
                         </ProjectDetail>
                         <ProjectDetail className='border-[#166534]'>
                             <CircleBadge className='bg-[#77e2924d]' />
                             <div className='dashboard-title font-bold text-white flex items-center gap-5 justify-between'>
-                                <Icon icon="icon-park-outline:done-all" color="#166534" width="50" height="50" />
+                                <Icon icon="icon-park-outline:done-all" color="#166534" className='w-[40px] lg:w-[50px] h-[40px] lg:h-[50px]' />
                                 Complete
                             </div>
                         </ProjectDetail>
