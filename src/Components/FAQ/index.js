@@ -20,8 +20,8 @@ export default function FAQ() {
     return (
         <Element name='faq' className='w-full flex justify-center bg-[#E5E5E5] relative'>
             <Content>
-                <ComponentTitle className='-mt-10 lg:mt-0'>FAQ</ComponentTitle>
-                <div className='absolute -top-10 xl:top-0 -right-20 xl:right-0'>
+                <ComponentTitle className='mt-0 md:-mt-10 lg:mt-0'>FAQ</ComponentTitle>
+                <div className='absolute -top-10 xl:top-0 -right-10 xl:right-0 hidden lg:block'>
                     <Player
                         autoplay
                         loop
@@ -32,7 +32,7 @@ export default function FAQ() {
                 <div className='lg:mt-10 w-full flex flex-col items-center'>
                     {FAQs.map((faq, index) => {
                         return (
-                            <div key={'faq' + index} className='w-[90%] lg:w-[70%] text-2xl lg:text-3xl xl:text-4xl text-stone-900 font-["Panda-font"] text-start bg-white p-5 rounded-xl drop-shadow-xl faq-content cursor-pointer mt-7' onClick={() => handleFAQ(index)}>
+                            <div key={'faq' + index} className='w-[90%] lg:w-[70%] text-xl md:text-2xl lg:text-3xl xl:text-4xl text-stone-900 font-["Panda-font"] text-start bg-white p-5 rounded-xl drop-shadow-xl faq-content cursor-pointer mt-7' onClick={() => handleFAQ(index)}>
                                 <div className='flex justify-between items-center'>
                                     {faq.question}
                                     {!isFAQOpen[index] ? <Icon icon="akar-icons:plus" width="30" height="30" /> : <Icon icon="akar-icons:minus" width="30" height="30" />}
@@ -42,7 +42,7 @@ export default function FAQ() {
                         )
                     })}
                 </div>
-                <div className='absolute -bottom-10 -left-24 xl:-left-10'>
+                <div className='absolute -bottom-10 -left-24 xl:-left-10 hidden lg:block'>
                     <Player
                         autoplay
                         loop

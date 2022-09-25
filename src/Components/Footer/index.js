@@ -15,8 +15,8 @@ export default function Footer() {
                     />
                     <div className='text-3xl lg:text-4xl xl:text-5xl text-stone-700 font-["Panda-font"]'>DEGEN DOMAIN</div>
                 </div>
-                <div className='w-3/4 text-lg lg:text-xl xl:text-2xl text-stone-700 text-center font-["bamboo"] mt-10 break-words leading-8 lg:leading-9 xl:leading-10'>Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate DEGEN information.</div>
-                <div className='flex mt-10 gap-20'>
+                <div className='w-3/4 text-base md:text-lg lg:text-xl xl:text-2xl text-stone-700 text-center font-["bamboo"] mt-10 break-words leading-8 lg:leading-9 xl:leading-10'>Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate DEGEN information.</div>
+                <div className='flex mt-10 gap-10 md:gap-20'>
                     {CommunityIcon.map((community) => {
                         return (
                             <div key={community} className='flex flex-col items-center cursor-pointer'>

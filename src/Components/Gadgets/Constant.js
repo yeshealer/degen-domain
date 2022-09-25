@@ -47,9 +47,9 @@ export const CommunityIcon = [
 ]
 
 export const Content = wrapn('div')`
-    w-[700px] lg:w-[900px] xl:w-[1150px] 2xl:w-[1400px] text-black text-center py-20 pb-10 border-b-4 border-[#77e2924d] flex flex-col items-center relative
+    w-[350px] sm:w-[550px] md:w-[700px] lg:w-[900px] xl:w-[1150px] 2xl:w-[1400px] text-black text-center py-10 md:py-20 pb-10 border-b-4 border-[#77e2924d] flex flex-col items-center relative
 `
 
 export const ComponentTitle = wrapn('div')`
-    text-5xl lg:text-6xl xl:text-7xl content-title font-["Panda-font"] text-white
+    text-4xl md:text-5xl lg:text-6xl xl:text-7xl content-title font-["Panda-font"] text-white
 `

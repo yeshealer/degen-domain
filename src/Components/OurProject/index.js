@@ -9,7 +9,7 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function index() {
     const ProjectDetail = wrapn('div')`
-        text-stone-700 text-2xl lg:text-3xl font-["bamboo"] font-thin border-2 rounded-xl w-60 lg:w-72 2xl:w-80 relative p-3 lg:p-5 bg-white overflow-hidden
+        text-stone-700 text-2xl lg:text-3xl font-["bamboo"] font-thin border-2 rounded-xl w-3/5 md:w-60 lg:w-72 2xl:w-80 relative p-3 lg:p-5 bg-white overflow-hidden
     `
     const CircleBadge = wrapn('div')`
         bg-[#77e2924d] absolute w-32 lg:w-40 h-32 lg:h-40 -top-16 -left-8 rounded-full flex items-center justify-center
@@ -42,15 +42,15 @@ export default function index() {
                             autoplay
                             loop
                             src="https://assets7.lottiefiles.com/packages/lf20_3j3plqzq.json"
-                            className='w-[240px] lg:w-[300px] h-[240px] lg:h-[300px]'
+                            className='w-[180px] md:w-[240px] lg:w-[300px] h-[180px] md:h-[240px] lg:h-[300px]'
                         />
                     </div>
                     <div className='w-[70%]'>
-                        <div className='text-2xl lg:text-3xl xl:text-4xl font-["bamboo"] font-black text-stone-700 mt-20'>DEGEN DOMAIN SERVICES</div>
-                        <div className='text-base lg:text-xl xl:text-2xl font-["bamboo"] text-stone-700 mt-5 lg:mt-10'>No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services. No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services.</div>
+                        <div className='text-xl md:text-2xl lg:text-3xl xl:text-4xl font-["bamboo"] font-black text-stone-700 mt-10 md:mt-20'>DEGEN DOMAIN SERVICES</div>
+                        <div className='text-sm md:text-base lg:text-xl xl:text-2xl font-["bamboo"] text-stone-700 mt-5 lg:mt-10'>No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services. No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services.</div>
                     </div>
                 </div>
-                <div className='w-4/5 text-center py-10 flex flex-col items-center'>
+                <div className='w-4/5 text-center py-10 pb-0 flex flex-col items-center'>
                     <Carousel
                         responsive={responsive}
                         itemClass="flex justify-center break-words"
