@@ -39,3 +39,7 @@ export const FAQs = [
         answer: "Whatever you want! You are free to do whatever you'd like under the non- exclusive license."
     }
 ]
+
+export const CommunityIcon = [
+    'discord', 'twitter', 'instagram', 'telegram'
+]
