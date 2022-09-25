@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Icon } from '@iconify/react';
 import { Player } from '@lottiefiles/react-lottie-player'
 import { Element } from 'react-scroll';
-import { FAQs } from '../Gadgets/Constant';
+import { FAQs, Content, ComponentTitle } from '../Gadgets/Constant';
 
 export default function FAQ() {
     const [isFAQOpen, setIsFAQOpen] = useState([])
@@ -19,9 +19,9 @@ export default function FAQ() {
     }
     return (
         <Element name='faq' className='w-full flex justify-center bg-[#E5E5E5] relative'>
-            <div className='w-[1400px] text-black py-20 border-b-4 border-[#77e2924d] relative flex flex-col items-center'>
-                <div className='text-7xl content-title font-["Panda-font"] text-white tracking-widest'>FAQ</div>
-                <div className='absolute top-0 right-0'>
+            <Content>
+                <ComponentTitle>FAQ</ComponentTitle>
+                <div className='absolute top-0 -right-20 xl:right-0'>
                     <Player
                         autoplay
                         loop
@@ -42,7 +42,7 @@ export default function FAQ() {
                         )
                     })}
                 </div>
-                <div className='absolute -bottom-10 -left-10'>
+                <div className='absolute -bottom-10 -left-32 xl:-left-10'>
                     <Player
                         autoplay
                         loop
@@ -50,7 +50,7 @@ export default function FAQ() {
                         className='w-[300px] h-[300px] rounded-xl'
                     />
                 </div>
-            </div>
+            </Content>
         </Element>
     )
 }

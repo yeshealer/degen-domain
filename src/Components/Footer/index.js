@@ -1,13 +1,18 @@
 import React from 'react'
 import { Player } from '@lottiefiles/react-lottie-player'
-import { CommunityIcon } from '../Gadgets/Constant'
+import { CommunityIcon, Content } from '../Gadgets/Constant'
 
 export default function Footer() {
     return (
         <div className='w-full flex flex-col items-center justify-center bg-[#E5E5E5] relative'>
-            <div className='w-[1400px] text-black py-20 border-b-4 border-[#77e2924d] relative flex flex-col items-center'>
+            <Content>
                 <div className='flex items-center gap-5'>
-                    <img src='assets/logo.png' alt='logo' className='w-[110px] h-[110px]' />
+                    <Player
+                        autoplay
+                        loop
+                        src='https://assets8.lottiefiles.com/packages/lf20_yxw1cjj4.json'
+                        className='w-[160px] h-[160px]'
+                    />
                     <div className='text-5xl text-stone-700 font-["Panda-font"]'>DEGEN DOMAIN</div>
                 </div>
                 <div className='w-3/4 text-2xl text-stone-700 text-center font-["bamboo"] mt-10 break-words leading-10'>Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate DEGEN information.</div>
@@ -21,14 +26,8 @@ export default function Footer() {
                         )
                     })}
                 </div>
-                <div className='absolute bottom-5 font-["bamboo"] text-xl text-stone-700'>@Copyright by 2022</div>
-                <Player
-                    autoplay
-                    loop
-                    src='https://assets8.lottiefiles.com/packages/lf20_yxw1cjj4.json'
-                    className='w-[220px] h-[220px] rounded-xl absolute bottom-10 left-0'
-                />
-            </div>
+                <div className='bottom-5 font-["bamboo"] text-xl text-stone-700 mt-10 -mb-5'>@Copyright by 2022</div>
+            </Content>
         </div>
     )
 }

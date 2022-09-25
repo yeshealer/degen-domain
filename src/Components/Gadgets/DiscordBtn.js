@@ -11,7 +11,7 @@ export default function DiscordBtn(props) {
             <span class="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
             <span class="absolute inset-0 w-full h-full border border-white rounded-md opacity-10"></span>
             <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-96 group-hover:h-96 opacity-5"></span>
-            <Icon icon="arcticons:discord-alt" className='text-white relative' width="45" height="45" />
+            <Icon icon="arcticons:discord-alt" className='text-white relative w-10 h-10 xl:w-12 xl:h-12' />
             <span class="relative pl-2">{props.text}</span>
         </button>
     )

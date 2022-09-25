@@ -1,3 +1,5 @@
+import { wrapn } from "wrapn"
+
 export const HowToBuy = [
     {
         title: 'Create MetaMask wallet',
@@ -43,3 +45,11 @@ export const FAQs = [
 export const CommunityIcon = [
     'discord', 'twitter', 'instagram', 'telegram'
 ]
+
+export const Content = wrapn('div')`
+    w-[900px] xl:w-[1150px] 2xl:w-[1400px] text-black text-center py-20 pb-10 border-b-4 border-[#77e2924d] flex flex-col items-center relative
+`
+
+export const ComponentTitle = wrapn('div')`
+    text-6xl xl:text-7xl content-title font-["Panda-font"] text-white
+`
