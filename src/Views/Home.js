@@ -9,6 +9,7 @@ import {
   FAQ,
   Footer
 } from '../Components'
+import { ScrollToTopBtn } from '../Components/Gadgets'
 
 export default function Home() {
   return (
@@ -17,12 +18,13 @@ export default function Home() {
         <Header />
         <Dashboard />
       </div>
-      <Web3Name />
       <OurProject />
+      <Web3Name />
       <HowToMint />
       <Art />
       <FAQ />
       <Footer />
+      <ScrollToTopBtn />
     </>
   )
 }

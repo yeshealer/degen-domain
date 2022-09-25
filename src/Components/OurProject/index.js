@@ -3,6 +3,7 @@ import { wrapn } from 'wrapn';
 import { Icon } from '@iconify/react';
 import { Player } from '@lottiefiles/react-lottie-player'
 import Carousel from "react-multi-carousel";
+import { Element } from 'react-scroll';
 import "react-multi-carousel/lib/styles.css";
 
 export default function index() {
@@ -43,9 +44,9 @@ export default function index() {
         }
     };
     return (
-        <div className='w-full flex justify-center bg-[#e5e5e5] relative'>
+        <Element name='aboutus' className='w-full flex justify-center bg-[#e5e5e5] relative'>
             <div className='w-[1400px] text-black text-center py-20 pb-10 border-b-4 border-[#77e2924d] flex flex-col items-center'>
-                <div className='font-["Panda-font"] text-7xl text-white content-title'>WHO ARE THE DOGEN DOMAIN?</div>
+                <div className='font-["Panda-font"] text-7xl text-white content-title'>WHO ARE THE DEGEN DOMAIN?</div>
                 <div className='flex items-start'>
                     <div className='w-[30%]'>
                         <Player
@@ -56,7 +57,7 @@ export default function index() {
                         />
                     </div>
                     <div className='w-[70%]'>
-                        <div className='text-4xl font-["bamboo"] font-black text-stone-700 mt-20'>DOGEN DOMAIN SERVICES</div>
+                        <div className='text-4xl font-["bamboo"] font-black text-stone-700 mt-20'>DEGEN DOMAIN SERVICES</div>
                         <div className='text-2xl font-["bamboo"] text-stone-700 mt-10'>No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services. No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services.</div>
                     </div>
                 </div>
@@ -98,6 +99,6 @@ export default function index() {
                     </Carousel>
                 </div>
             </div>
-        </div>
+        </Element>
     )
 }

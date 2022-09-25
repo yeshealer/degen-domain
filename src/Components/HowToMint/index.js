@@ -1,12 +1,13 @@
 import React from 'react'
 import { Player } from '@lottiefiles/react-lottie-player'
+import { Element } from 'react-scroll'
 import { HowToBuy } from '../Gadgets/Constant'
 
-export default function index() {
+export default function HowToMint() {
     return (
-        <div className='w-full flex justify-center bg-[#E5E5E5] relative'>
+        <Element name='buy' className='w-full flex justify-center bg-[#E5E5E5] relative'>
             <div className='w-[1400px] text-black py-20 border-b-4 border-[#77e2924d] relative flex flex-col items-center'>
-                <div className='text-7xl content-title font-["Panda-font"] text-white'>How to buy</div>
+                <div className='text-7xl content-title font-["Panda-font"] text-white'>How to Mint</div>
                 <div className='grid grid-cols-2 gap-5 mt-20 relative'>
                     {HowToBuy.map((process, index) => {
                         return (
@@ -27,6 +28,6 @@ export default function index() {
                     </div>
                 </div>
             </div>
-        </div>
+        </Element>
     )
 }

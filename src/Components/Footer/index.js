@@ -6,17 +6,16 @@ export default function Footer() {
     return (
         <div className='w-full flex flex-col items-center justify-center bg-[#E5E5E5] relative'>
             <div className='w-[1400px] text-black py-20 border-b-4 border-[#77e2924d] relative flex flex-col items-center'>
-                {/* <div className='text-7xl content-title font-["Panda-font"] text-white'>Community</div> */}
                 <div className='flex items-center gap-5'>
-                    <img src='assets/logo.png' alt='logo' className='w-[100px] h-[100px]' />
+                    <img src='assets/logo.png' alt='logo' className='w-[110px] h-[110px]' />
                     <div className='text-5xl text-stone-700 font-["Panda-font"]'>DEGEN DOMAIN</div>
                 </div>
-                <div className='w-3/4 text-2xl text-stone-700 text-center font-["bamboo"] mt-10 break-words leading-10'>Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate DOGEN information.</div>
+                <div className='w-3/4 text-2xl text-stone-700 text-center font-["bamboo"] mt-10 break-words leading-10'>Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate DEGEN information.</div>
                 <div className='flex mt-10 gap-20'>
                     {CommunityIcon.map((community) => {
                         return (
-                            <div className='flex flex-col cursor-pointer'>
-                                <img src={`assets/${community}.svg`} alt="community" className='w-20 h-20' />
+                            <div key={community} className='flex flex-col items-center cursor-pointer'>
+                                <img src={`assets/${community}.svg`} alt="community" className='w-12 h-12' />
                                 <div className='text-lg font-["bamboo"] text-stone-700'>{community}</div>
                             </div>
                         )
