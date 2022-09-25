@@ -12,7 +12,7 @@ export default function ScrollToTopBtn() {
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
             setBtnShow('block')
         } else {
             setBtnShow('hidden')

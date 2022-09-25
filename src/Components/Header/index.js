@@ -13,7 +13,7 @@ export default function Header() {
           <div className='text-3xl text-white dashboard-title font-["Panda-font"]'>DEGEN DOMAIN</div>
         </div>
         <div className='flex gap-10'>
-          <Link spy activeClass='active' smooth offset={50} duraztion={500} className='text-base font-thin font-["bamboo"] cursor-pointer text-white hover:text-gray-300 transition-all duration-500' onClick={() => scrollToTop()}>Home</Link>
+          <Link spy activeClass='active' smooth offset={50} duration={500} className='text-base font-thin font-["bamboo"] cursor-pointer text-white hover:text-gray-300 transition-all duration-500' onClick={() => scrollToTop()}>Home</Link>
           <Link spy activeClass='active' smooth offset={50} duration={500} to="aboutus" className='text-base font-thin font-["bamboo"] cursor-pointer text-white hover:text-gray-300 transition-all duration-500'>About us</Link>
           <Link spy activeClass='active' smooth offset={50} duration={500} to="buy" className='text-base font-thin font-["bamboo"] cursor-pointer text-white hover:text-gray-300 transition-all duration-500'>How to Mint</Link>
           <Link spy activeClass='active' smooth offset={50} duration={500} to="art" className='text-base font-thin font-["bamboo"] cursor-pointer text-white hover:text-gray-300 transition-all duration-500'>Art</Link>
