@@ -8,7 +8,14 @@ export default function HowToMint() {
         <Element name='buy' className='w-full flex justify-center bg-[#E5E5E5] relative'>
             <Content>
                 <ComponentTitle>How to Mint</ComponentTitle>
-                <div className='grid grid-cols-2 gap-5 mt-10 md:mt-20 lg:relative'>
+                <div className='w-[220px] sm:w-[200px] md:w-[240px] lg:w-[220px] xl:w-[350px] h-[220px] sm:h-[200px] md:h-[240px] lg:h-[220px] xl:h-[350px] 2xl:w-[370px] 2xl:h-[370px] border-0 lg:border border-[#166534] rounded-full p-0 pt-10 sm:p-10 relative sm:absolute lg:bg-[#e5e5e5] left-0 sm:-left-10 lg:left-[300px] xl:left-[400px] 2xl:left-[515px] -top-10 md:-top-5 lg:top-44 xl:top-24 2xl:top-12 block sm:hidden'>
+                    <Player
+                        autoplay
+                        loop
+                        src="https://assets7.lottiefiles.com/packages/lf20_ki2ohgx3.json"
+                    />
+                </div>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-5 mt-0 sm:mt-10 md:mt-20 lg:relative'>
                     {HowToBuy.map((process, index) => {
                         return (
                             <div className='border-2 border-[#166534] bg-white p-7 lg:p-10 rounded-xl flex flex-col overflow-hidden shadow-xl relative' key={process.title}>
@@ -19,7 +26,7 @@ export default function HowToMint() {
                             </div>
                         )
                     })}
-                    <div className='w-[200px] md:w-[240px] lg:w-[300px] xl:w-[350px] h-[200px] md:h-[240px] lg:h-[300px] xl:h-[350px] 2xl:w-[370px] 2xl:h-[370px] border-none lg:border border-[#166534] rounded-full p-10 absolute lg:bg-[#e5e5e5] -left-10 lg:left-[300px] xl:left-[400px] 2xl:left-[515px] -top-10 md:-top-5 lg:top-44 xl:top-24 2xl:top-12'>
+                    <div className='w-[220px] sm:w-[200px] md:w-[240px] lg:w-[300px] xl:w-[350px] h-[220px] sm:h-[200px] md:h-[240px] lg:h-[300px] xl:h-[350px] 2xl:w-[370px] 2xl:h-[370px] border-0 lg:border border-[#166534] rounded-full p-0 pt-10 sm:p-10 relative sm:absolute lg:bg-[#e5e5e5] left-0 sm:-left-10 lg:left-[300px] xl:left-[400px] 2xl:left-[515px] -top-10 md:-top-5 lg:top-44 xl:top-24 2xl:top-12 hidden sm:block'>
                         <Player
                             autoplay
                             loop
