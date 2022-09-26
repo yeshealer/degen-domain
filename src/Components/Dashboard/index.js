@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Player } from '@lottiefiles/react-lottie-player'
 import { Link } from 'react-scroll'
 import { DiscordBtn, LaunchBtn } from '../Gadgets'
