@@ -14,7 +14,7 @@ export default function Web3Name() {
                         autoplay
                         loop
                         src="assets/coding_panda.json"
-                        className='w-[200px] sm:w-[150px] md:w-[180px] w-[200px] sm:h-[150px] md:h-[180px] lg:w-[240px] h-[240px]'
+                        className='w-[200px] sm:w-[150px] md:w-[180px] lg:w-[240px] h-[200px] sm:h-[150px] md:h-[180px] lg:w-[240px]'
                     />
                 </div>
                 <div className='font-["bamboo"] max-w-5xl text-base md:text-lg lg:text-xl xl:text-2xl text-center font-thin mt-0 sm:mt-10 text-stone-700 leading-5 sm:leading-7 lg:leading-10'>No more sandboxed usernames. Own your username, store an avatar and other profile data, and use it across services.</div>
