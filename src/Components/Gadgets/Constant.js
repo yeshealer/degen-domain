@@ -19,8 +19,8 @@ export const HowToBuy = [
     }
 ]
 
-export const PandaArts = [
-    'Sleeping Panda', 'Sleeping Panda', 'Sleeping Panda', 'Sleeping Panda'
+export const Partners = [
+    'binance', 'dogechain', 'techrate', 'rugdoc'
 ]
 
 export const FAQs = [
@@ -43,7 +43,7 @@ export const FAQs = [
 ]
 
 export const CommunityIcon = [
-    'discord', 'twitter', 'instagram', 'telegram'
+    'github', 'twitter', 'medium', 'telegram'
 ]
 
 export const Content = wrapn('div')`

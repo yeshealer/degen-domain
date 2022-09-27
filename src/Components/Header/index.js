@@ -20,8 +20,8 @@ export default function Header() {
   return (
     <Element name='home' className='w-full py-3 px-10 h-[100px] flex justify-center'>
       <div className='w-full flex justify-between items-center'>
-        <div className='flex items-center gap-5'>
-          <img src='assets/logo.png' alt='logo' className='w-[50px] md:w-[76px] h-[50px] md:h-[76px]' />
+        <div className='flex items-center gap-3'>
+          <img src='assets/logo.png' alt='logo' className='w-[55px] md:w-[90px] h-[55px] md:h-[90px]' />
           <div className='text-2xl md:text-3xl text-white dashboard-title font-["Panda-font"]'>DEGEN DOMAIN</div>
         </div>
         <div className='gap-10 hidden lg:flex'>
